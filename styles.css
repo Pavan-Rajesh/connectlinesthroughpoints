@@ -1,0 +1,27 @@
+body {
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: red;
+  position: absolute;
+}
+
+.line {
+  width: 2px;
+  height: 30px;
+  background-color: lime;
+  position: absolute;
+  transform-origin: top;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+}
