@@ -16,8 +16,15 @@
     <div class="line"></div>
 
     <button type="button" id="undo">undo</button>
+    <button type="button" id="drop">drop</button>
 
-    <script src="index.js"></script>
+    <button type="button" style="position:absolute;right:0px" id="savePNG">save</button>
+    <button type="button" style="position:absolute;right:0px;bottom:0px" id="bgButton">removebg</button>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js"></script>
+    <script defer src="index.js"></script>
 </body>
 
 </html>
