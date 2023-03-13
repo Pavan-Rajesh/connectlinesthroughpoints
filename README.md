@@ -13,3 +13,4 @@ the updates you are gonna see are
 2. draw
 3. save a png to your downloads folder 
 
+and also you can remove the background by pressing the removebg button
