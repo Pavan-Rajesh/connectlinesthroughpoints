@@ -8,7 +8,6 @@ body {
   height: 100vh;
   background-color: black;
   overflow: hidden;
-  background-image: url("./images/Bart_Simpson_200px.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
