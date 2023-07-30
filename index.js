@@ -77,10 +77,10 @@ function removeBackground(e) {
 
 document.getElementById("savePNG").addEventListener("click", function (e) {
   e.stopPropagation();
-  html2canvas(body, {
-    onrendered: function (canvas) {
-      // document.body.appendChild(canvas);
-      return Canvas2Image.saveAsPNG(canvas);
-    },
+  html2canvas(document.body).then((canvas) => {
+    let a = document.createElement("a");
+    a.download = "ss.png";
+    a.href = canvas.toDataURL("image/png");
+    a.click();
   });
 });
