@@ -84,3 +84,18 @@ document.getElementById("savePNG").addEventListener("click", function (e) {
     a.click();
   });
 });
+
+window.addEventListener("load", function () {
+  document
+    .querySelector('input[type="file"]')
+    .addEventListener("change", function (e) {
+      e.stopPropagation();
+      if (this.files && this.files[0]) {
+        var img = document.getElementById("img_content");
+        img.onload = () => {
+          URL.revokeObjectURL(img.src);
+        };
+        img.src = URL.createObjectURL(this.files[0]);
+      }
+    });
+});
